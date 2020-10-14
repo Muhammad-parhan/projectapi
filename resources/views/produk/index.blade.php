@@ -5,7 +5,7 @@
 <div class="col-sm-9 col-xs-12 content pt-3 pl-0">
   <h5 class="mb-0" ><strong>Datatable</strong></h5>
   <span class="text-secondary">Dashboard <i class="fa fa-angle-right"></i> Datatable</span>
-  
+
   <div class="row mt-3">
       <div class="col-sm-12">
           <!--Datatable-->
@@ -29,8 +29,8 @@
                             $no= 1;
                         @endphp
                         @foreach ($produk as $item)
-                            
-                       
+
+
                           <tr>
                               <td>{{$item->kode}}</td>
                               <td>{{$item->nama}}</td>
@@ -50,7 +50,7 @@
                           </tr>
                           @endforeach
                       </tbody>
-                     
+
                   </table>
               </div>
           </div>

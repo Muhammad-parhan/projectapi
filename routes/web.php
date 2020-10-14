@@ -30,3 +30,10 @@ Route::post('produk/addp','produkctrl@store');
 Route::get('produk/edit/{id}','produkctrl@show');
 Route::post('produk/{id}','produkctrl@edit');
 Route::delete('produk/{id}','produkctrl@destroy');
+
+Route::get('checkout','CheckoutController@index');
+Route::get('getCity/ajax/{id}', 'CheckoutController@ajax');
+
+Route::get('transaksi', 'TransaksiController@index');
+
+Route::post('transaksi/c', 'TransaksiController@setCookie');

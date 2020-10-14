@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="description" content="" >
+    <meta name="description" content="">
     <meta name="author" content="">
     <meta name="keywords" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -43,8 +43,9 @@
     <![endif]-->
 
     <title>ProjectAPi</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <!--Page loader-->
     <div class="loader-wrapper">
         <div class="loader-circle">
@@ -62,9 +63,10 @@
 
             <!--Logo-->
             <div class="col-sm-3 pl-0 text-center header-logo">
-               <div class="bg-theme mr-3 pt-3 pb-2 mb-0">
-                    <h3 class="logo"><a href="#" class="text-secondary logo"><i class="fa fa-rocket"></i> Sleek<span class="small">admin</span></a></h3>
-               </div>
+                <div class="bg-theme mr-3 pt-3 pb-2 mb-0">
+                    <h3 class="logo"><a href="#" class="text-secondary logo"><i class="fa fa-rocket"></i> Sleek<span
+                                class="small">admin</span></a></h3>
+                </div>
             </div>
             <!--Logo-->
 
@@ -81,7 +83,8 @@
                         <!--Toggle sidebar-->
                         <!--Notification icon-->
                         <div class="menu-icon">
-                            <a class="" href="#" onclick="toggle_dropdown(this); return false" role="button" class="dropdown-toggle">
+                            <a class="" href="#" onclick="toggle_dropdown(this); return false" role="button"
+                                class="dropdown-toggle">
                                 <i class="fa fa-bell"></i>
                                 <span class="badge badge-danger">5</span>
                             </a>
@@ -134,16 +137,19 @@
 
                         <!--Inbox icon-->
                         <span class="menu-icon inbox">
-                            <a class="" href="#" role="button" id="dropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="" href="#" role="button" id="dropdownMenuLink3" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-envelope"></i>
                                 <span class="badge badge-danger">4</span>
                             </a>
-                            <div class="dropdown-menu dropdown-menu-left mt-10 animated zoomInDown" aria-labelledby="dropdownMenuLink3">
+                            <div class="dropdown-menu dropdown-menu-left mt-10 animated zoomInDown"
+                                aria-labelledby="dropdownMenuLink3">
                                 <a class="dropdown-item" href="#"><strong>Unread messages</strong></a>
                                 <div class="dropdown-divider"></div>
                                 <a href="#" class="dropdown-item">
                                     <div class="media">
-                                        <img class="align-self-center mr-3 rounded-circle" src="assets/img/profile.jpg" width="50px" height="50px" alt="Generic placeholder image">
+                                        <img class="align-self-center mr-3 rounded-circle" src="assets/img/profile.jpg"
+                                            width="50px" height="50px" alt="Generic placeholder image">
                                         <div class="media-body">
                                             <h6 class="mt-0"><strong>Adam Abdulrahman</strong></h6>
                                             <p>How are you?</p>
@@ -154,7 +160,8 @@
                                 <div class="dropdown-divider"></div>
                                 <a href="#" class="dropdown-item">
                                     <div class="media">
-                                        <img class="align-self-center mr-3 rounded-circle" src="assets/img/profile.jpg" width="50px" height="50px" alt="Generic placeholder image">
+                                        <img class="align-self-center mr-3 rounded-circle" src="assets/img/profile.jpg"
+                                            width="50px" height="50px" alt="Generic placeholder image">
                                         <div class="media-body">
                                             <h6 class="mt-0"><strong>Adam Abdulrahman</strong></h6>
                                             <p>How are you?</p>
@@ -165,7 +172,8 @@
                                 <div class="dropdown-divider"></div>
                                 <a href="#" class="dropdown-item">
                                     <div class="media">
-                                        <img class="align-self-center mr-3 rounded-circle" src="assets/img/profile.jpg" width="50px" height="50px" alt="Generic placeholder image">
+                                        <img class="align-self-center mr-3 rounded-circle" src="assets/img/profile.jpg"
+                                            width="50px" height="50px" alt="Generic placeholder image">
                                         <div class="media-body">
                                             <h6 class="mt-0"><strong>Adam Abdulrahman</strong></h6>
                                             <p>How are you?</p>
@@ -208,12 +216,16 @@
                     <div class="sidebar-menu-container">
                         <ul class="sidebar-menu mt-4 mb-4">
                             <li class="parent">
-                                <a href="#" onclick="toggle_menu('dashboard'); return false" class=""><i class="fa fa-dashboard mr-3"> </i>
-                                    <span class="none">Produk <i class="fa fa-angle-down pull-right align-bottom"></i></span>
+                                <a href="#" onclick="toggle_menu('dashboard'); return false" class=""><i
+                                        class="fa fa-dashboard mr-3"> </i>
+                                    <span class="none">Produk <i
+                                            class="fa fa-angle-down pull-right align-bottom"></i></span>
                                 </a>
                                 <ul class="children" id="dashboard">
-                                    <li class="child"><a href="/produk" class="ml-4"><i class="fa fa-angle-right mr-2"></i> Data Produk</a></li>
-                                <li class="child"><a href="/kategori" class="ml-4"><i class="fa fa-angle-right mr-2"></i> Kategori</a></li>
+                                    <li class="child"><a href="/produk" class="ml-4"><i
+                                                class="fa fa-angle-right mr-2"></i> Data Produk</a></li>
+                                    <li class="child"><a href="/kategori" class="ml-4"><i
+                                                class="fa fa-angle-right mr-2"></i> Kategori</a></li>
                                 </ul>
                             </li>
                             </li>
@@ -226,7 +238,7 @@
 
             <!--Content right-->
             <div class="col-sm-9 col-xs-12 content pt-3 pl-0">
-            @yield('content')
+                @yield('content')
 
 
             </div>
@@ -236,11 +248,18 @@
 
     </div>
 
-    
+
     <script src="{{asset('assets/js/jquery.dataTables.min.js')}}"></script>
     <script src="{{asset('assets/js/dataTables.bootstrap4.min.js')}}"></script>
 
     <!--Page Wrapper-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
 
     <!-- Page JavaScript Files-->
     <script src="{{ asset('style/assets/js/jquery.min.js')}}"></script>
@@ -277,9 +296,57 @@
     <!--Custom Js Script-->
     <script src="{{ asset('style/assets/js/custom.js')}}"></script>
     <!--Custom Js Script-->
-    <script>
+    <script type="text/javascript">
         //Nice select
         $('.bulk-actions').niceSelect();
+        $(document).ready(function () {
+            $('select[name="province_form"]').on('change', function () {
+                var cityId = $(this).val();
+                if (cityId) {
+                    $.ajax({
+                        url: 'getCity/ajax/' + cityId,
+                        type: "GET",
+                        dataType: "json",
+                        success: function (data) {
+                            console.log(data);
+                            $('select[name="origin"]').empty();
+                            $.each(data, function (key, value) {
+                                $('select[name="origin"]').append(
+                                    '<option value="' +
+                                    key + '">' + value + '</option>');
+                            });
+                        }
+                    });
+                } else {
+                    $('select[name="origin"]').empty();
+                }
+            });
+
+
+            $('select[name="province_to"]').on('change', function () {
+                var cityId = $(this).val();
+                if (cityId) {
+                    $.ajax({
+                        url: 'getCity/ajax/' + cityId,
+                        type: "GET",
+                        dataType: "json",
+                        success: function (data) {
+                            console.log(data);
+                            $('select[name="destination"]').empty();
+                            $.each(data, function (key, value) {
+                                $('select[name="destination"]').append(
+                                    '<option value="' +
+                                    key + '">' + value + '</option>');
+                            });
+                        }
+                    });
+                } else {
+                    $('select[name="destination"]').empty();
+                }
+            });
+        });
+
     </script>
-  </body>
+</body>
+
 </html>

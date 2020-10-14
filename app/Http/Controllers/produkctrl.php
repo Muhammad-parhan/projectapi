@@ -18,8 +18,8 @@ class produkctrl extends Controller
     {
         $kategori=kategori::get();
         $produk= produk::with('kategori')->get();
-        // return view('produk.index',compact("produk"));
-        return $produk;
+        return view('produk.index',compact("produk"));
+        // return $produk;
 
     }
 
@@ -71,11 +71,11 @@ class produkctrl extends Controller
      */
     public function show($id)
     {
-         
+
          $produk= produk::with('kategori')->where('id',$id)->first();
         $kategori= kategori::get();
          return view('produk.edit',compact("produk",'kategori'));
-        
+
         // return $produk;
     }
 
@@ -126,7 +126,7 @@ class produkctrl extends Controller
      */
     public function destroy($id)
     {
-       
+
         $kategori = DB::table('produks')->where('id', $id)->delete();
         return redirect('produk')->with('status', 'kategori berhasil di hapus!');
     }
